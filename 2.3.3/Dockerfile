@@ -39,11 +39,6 @@ ADD ./Gemfile $CONTAINER_APP_FOLDER/Gemfile
 WORKDIR $CONTAINER_APP_FOLDER
 
 RUN gem install bundler
-# RUN gem install nokogiri -v1.6.8.1
-# RUN gem install simplecov -v0.13.0
-# RUN gem install msgpack -v1.1.0
-# RUN gem install newrelic_rpm -v3.18.1.330
-# RUN gem install rufus-scheduler -v3.3.4
 
 RUN bundle install --jobs 20 --retry 5
 
