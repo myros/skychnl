@@ -34,7 +34,7 @@ RUN mkdir $CONTAINER_APP_FOLDER
 
 # Add the Rails application directory structure to $CONTAINER_APP_FOLDER on the container's filesystem
 ADD ./Gemfile $CONTAINER_APP_FOLDER/Gemfile
-ADD ./Gemfile.lock $CONTAINER_APP_FOLDER/Gemfile.lock
+# ADD ./Gemfile.lock $CONTAINER_APP_FOLDER/Gemfile.lock
 
 WORKDIR $CONTAINER_APP_FOLDER
 
