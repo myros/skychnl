@@ -68,6 +68,7 @@ RUN echo $APP_LOCAL_PATH
 
 # vars
 ENV CONTAINER_APP_FOLDER /app
+ENV BUNDLE_PATH /bundle
 
 # Run `bundle install` BEFORE adding the Rails application directory structure
 # to /app on the container's filesystem.
